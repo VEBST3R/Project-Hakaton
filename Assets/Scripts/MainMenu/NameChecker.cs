@@ -38,13 +38,6 @@ public class NameChecker : MonoBehaviour
         // Ваш код для роботи з базою даних
     }
 
-    private void Start()
-    {
-        // Додаємо обробник події для TMP полю введення (TMP_InputField)
-        NameField.onValueChanged.AddListener(OnNameFieldValueChanged);
-        CheckBD();
-    }
-
     private void OnNameFieldValueChanged(string newValue)
     {
         // Перевіряємо, чи TMP поле введення не пусте

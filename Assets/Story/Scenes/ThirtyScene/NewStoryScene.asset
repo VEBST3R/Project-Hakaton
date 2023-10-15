@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51fb4c6070f247e48b4377b5728b8182, type: 3}
-  m_Name: Monster eat
+  m_Name: NewStoryScene
   m_EditorClassIdentifier: 
   sentences:
-  - text: "\u0412\u0435\u0447\u0435\u0440\u044F \u0431\u0443\u043B\u0430 \u0441\u043C\u0430\u0447\u043D\u0430...."
-    speaker: {fileID: 11400000, guid: e5d2a04c65248f840bbb6e540549968e, type: 2}
-  background: {fileID: 21300000, guid: fa3c45606720690408fca7aa0fea7b46, type: 3}
-  nextScene: {fileID: 11400000, guid: bced6ee739688e440a4f8cb9d78fe5a9, type: 2}
+  - text: '                 '
+    speaker: {fileID: 11400000, guid: 755db819ff1a2ea4aa12594b5b3997b8, type: 2}
+  background: {fileID: 21300000, guid: 25df7ab0edc6c1e479fc92219da83c6e, type: 3}
+  nextScene: {fileID: 11400000, guid: eb7cbd73e555c154980fffc6e43aa336, type: 2}
