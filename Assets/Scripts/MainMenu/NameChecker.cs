@@ -51,19 +51,6 @@ public class NameChecker : MonoBehaviour
     {
         // Отримуємо ім'я з TMP InputField
         string playerName = NameField.text;
-
-        // Видаляємо всі попередні записи
-        dbConnection.DeleteAll<PlayerInfo>();
-
-        // Додаємо новий запис із ім'ям гравця
-        var playerInfo = new PlayerInfo
-        {
-            PlayerName = playerName,
-            Scene1Choise = 0,
-            Scene2Choise = 0,
-            Scene3Choise = 0
-        };
-        dbConnection.Insert(playerInfo);
         Pers.speakerName = playerName;
         
     }
