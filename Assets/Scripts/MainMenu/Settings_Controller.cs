@@ -8,22 +8,15 @@ public class AudioManager : MonoBehaviour
     public Slider musicSlider; // Слайдер для гучності музики
     public Slider soundSlider; // Слайдер для гучності звуків
 
-    private void Start()
-    {
-        // Ініціалізуємо слайдери з поточими значеннями гучності
-        musicSlider.value = musicSource.volume;
-        soundSlider.value = soundSource.volume;
-    }
-
-    public void SetMusicVolume(float volume)
+    public void SetMusicVolume()
     {
         // Встановлюємо гучність музики відповідно до значення слайдера
-        musicSource.volume = volume;
+        musicSource.volume = musicSlider.value;
     }
 
-    public void SetSoundVolume(float volume)
+    public void SetSoundVolume()
     {
         // Встановлюємо гучність звуків відповідно до значення слайдера
-        soundSource.volume = volume;
+        soundSource.volume = soundSlider.value;
     }
 }

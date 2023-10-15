@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private Animator MenuAnimator;
-    [SerializeField] private Camera camera;
+    [SerializeField] private new Camera camera;
     public void OnSettingsClick(){
         camera.backgroundColor = Color.white;
         MenuAnimator.SetBool("Options", true);
@@ -14,5 +14,21 @@ public class MenuController : MonoBehaviour
     public void BackSettingsClick(){
         camera.backgroundColor = Color.black;
         MenuAnimator.SetBool("Options", false);
+    }
+    public void OnAuthorsClick(){
+        camera.backgroundColor = Color.white;
+        MenuAnimator.SetBool("Authors", true);
+    }
+    public void BackAuthorsClick(){
+        camera.backgroundColor = Color.black;
+        MenuAnimator.SetBool("Authors", false);
+    }
+    public void OnNewGameClick(){
+        camera.backgroundColor = Color.white;
+        MenuAnimator.SetBool("NewGame", true);
+    }
+    public void BackNewGameClick(){
+        camera.backgroundColor = Color.black;
+        MenuAnimator.SetBool("NewGame", false);
     }
 }
