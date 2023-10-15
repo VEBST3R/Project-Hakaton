@@ -8,6 +8,10 @@ public class AudioManager : MonoBehaviour
     public Slider musicSlider; // Слайдер для гучності музики
     public Slider soundSlider; // Слайдер для гучності звуків
 
+    public AudioManager()
+    {
+    }
+
     public void SetMusicVolume()
     {
         // Встановлюємо гучність музики відповідно до значення слайдера

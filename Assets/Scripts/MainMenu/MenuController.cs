@@ -31,4 +31,8 @@ public class MenuController : MonoBehaviour
         camera.backgroundColor = Color.black;
         MenuAnimator.SetBool("NewGame", false);
     }
+    public void OnStartGameClick(){
+        camera.backgroundColor = Color.black;
+        MenuAnimator.SetBool("Start", true);
+    }
 }

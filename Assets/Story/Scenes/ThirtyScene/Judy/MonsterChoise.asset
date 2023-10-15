@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa21d4123d556443abbbad79a10b72f, type: 3}
+  m_Name: MonsterChoise
+  m_EditorClassIdentifier: 
+  labels:
+  - text: "\u0414\u043E\u043F\u043E\u043C\u043E\u0433\u0442\u0438"
+    nextScene: {fileID: 11400000, guid: 2a96e5e37a00da54b883a48954fe5887, type: 2}
+  - text: "\u0417'\u0457\u0441\u0442\u0438"
+    nextScene: {fileID: 11400000, guid: d4c82983582ec6b468d50f43fbf7626a, type: 2}

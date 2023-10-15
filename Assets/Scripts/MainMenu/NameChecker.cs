@@ -71,7 +71,7 @@ public class NameChecker : MonoBehaviour
             Scene3Choise = 0
         };
         dbConnection.Insert(playerInfo);
-        Pers.newPesonage = playerName;
-        // Виконуємо додаткові дії, які вам потрібні після збереження імені
+        Pers.speakerName = playerName;
+        
     }
 }

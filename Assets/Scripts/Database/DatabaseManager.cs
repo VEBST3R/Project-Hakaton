@@ -4,7 +4,7 @@ using SQLite4Unity3d;
 public class DatabaseManager : MonoBehaviour
 {
     private SQLiteConnection dbConnection;
-    private string dbName = "Assets/database/gamebase.db"; // Назва файлу бази даних
+    private string dbName = "database/gamebase.db"; // Назва файлу бази даних
 
     private void Awake()
     {
@@ -12,13 +12,10 @@ public class DatabaseManager : MonoBehaviour
 
         // Визначаємо шлях до бази даних залежно від платформи
         #if UNITY_EDITOR
-            // Використовуємо спеціальний шлях для редактора Unity
             dbPath = dbName;
         #elif UNITY_ANDROID
-            //Шлях до бази даних на Android
             dbPath = Application.persistentDataPath + "/" + dbName;
         #else
-            // Ваш специфічний шлях для інших платформ
             dbPath = Application.dataPath + "/" + dbName;
         #endif
 
